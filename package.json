@@ -1,0 +1,44 @@
+{
+  "name": "Helios-Wallet",
+  "version": "0.0.1",
+  "description": "A wallet for the Helium network.",
+  "main": "init.js",
+  "author": {
+    "name": "",
+    "email": ""
+  },
+  "repository": "https://github.com/vulet/helios-wallet",
+  "license": "AGPL-3.0-only",
+  "dependencies": {
+    "@helium/crypto": "^3.1.0",
+    "@helium/http": "^3.4.0",
+    "@helium/proto": "^1.1.0",
+    "@ledgerhq/hw-transport-node-hid": "^5.30.0",
+    "@ledgerhq/hw-transport-web-ble": "^5.30.0",
+    "helios-transport": "^1.0.3",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-decorators": "^7.8.3",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-react": "^7.9.4",
+    "browser-sync": "^2.26.7",
+    "electron": "^10.1.6",
+    "electron-builder": "^22.9.1",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-inject-string": "^1.1.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "rimraf": "^3.0.2"
+  },
+  "scripts": {
+    "postinstall": "electron-builder install-app-deps",
+    "develop": "gulp develop",
+    "pack:mac": "gulp pack-mac",
+    "pack:win": "gulp pack-win",
+    "pack:linux": "gulp pack-linux"
+  }
+}
