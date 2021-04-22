@@ -25,14 +25,17 @@
     "@babel/plugin-proposal-decorators": "^7.8.3",
     "@babel/preset-env": "^7.9.5",
     "@babel/preset-react": "^7.9.4",
+    "autoprefixer": "^10.2.5",
     "browser-sync": "^2.26.7",
     "electron": "^10.1.6",
     "electron-builder": "^22.9.1",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
     "gulp-inject-string": "^1.1.2",
+    "gulp-postcss": "^9.0.0",
     "gulp-sourcemaps": "^2.6.5",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "tailwindcss": "^2.1.1"
   },
   "scripts": {
     "postinstall": "electron-builder install-app-deps",
